@@ -82,7 +82,32 @@
 			@media only screen and (max-width: 300px) {
 			.text {font-size: 11px}
 			}
+
+			.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 			</style>
+
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -97,14 +122,6 @@
 									<span class="symbol"><img src="images/no-google.jpg" alt="" /></span><span class="title">Say no to google</span>
 								</a>
 
-							<!-- internal link to comics and more -->
-							<p><a href="#comic">Comics</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="#vid">Video</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="#report">Our Report</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="#memes_search">Memes</a> &nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="#change">How to Shift from Google</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="#extras">Extras</a></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						</p>
 							<!-- Nav -->
 								<nav>
 									<ul>
@@ -132,14 +149,20 @@
 
 					<div id="main">
 						<div class="inner">
+
+						<!-- internal link to comics and more -->
+						<p><a href="#comic">Comics</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="#vid">Video</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="#report">Our Report</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="#memes_search">Memes</a> &nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="#change">How to Shift from Google</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<a href="#extras">Extras</a></p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</p>
 							<h1>Why never search on Google?</h1>
 							
 					
-
-					<br>
-					
-
-					
+				<div class="container" id="main_diss">
+					<br>					
 					<p>Google has made such a big name for itself in online search that today we almost only use the term “google” to search online. 
 						With an ever-growing number of users and its huge machine learning models, Google is now not only the most used search engine in the world, but also the biggest fish in the sea of personalized ads. 
 						On the surface, personalized ads seem great because advertisers are only promoting to their potential customers and users are only seeing relevant ads. 
@@ -163,11 +186,13 @@
 					
 				<h3 id="vid"> Watch the following videos for a fun way to understand why you should stop using Google</h3>
 				<!-- Video  paste the link to the video of-->
-
-				<iframe width="100%" height="500px" src="https://www.youtube.com/embed/HgZoGtnx6fY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="iframe-container">
+	<iframe src="https://www.youtube.com/embed/HgZoGtnx6fY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
-				<!-- end video-->		
-
+	<!-- end video-->	
+</div>
+	
+				</div>
 				</div>
 			</div>
 					
@@ -233,7 +258,13 @@
 <div class="container" id="memes_search">
 		<h2>Memes</h2>  
 		Here's a funny video from CollegeHumor that jokes about personalized advertising:
-	  <iframe width="560" height="315" src="https://www.youtube.com/embed/KbKdKcGJ4tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  
+		<div class="iframe-container">
+			<iframe  src="https://www.youtube.com/embed/KbKdKcGJ4tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+			<!-- end video-->	
+		</div>
+		
 
 	</div>
 
@@ -255,8 +286,13 @@
 			<li>Select Default Search Engine</li>
 			<li>Select DuckDuckGo from the drop-down menu</li>
 		</ul>
-		<img src="images\default_search_gif.gif" alt="funny GIF"  width="660" height="615" >
-		
+	</div>
+	<div class="container" id="gif_search">
+		<img src="images\default_search_gif.gif" alt="Nature" class="responsive"  width="600" height="400">
+
+	</div>
+
+		<div>
 		<li><strong>Move your Passwords and Bookmarks to new Browser:</strong></li>
 		If you have been using a certain browser for a long time, switching to a new one can be difficult because you don't want to give up your already saved bookmarks and passwords. 
 		Generally, it is advisable to save your username and password on an external drive rather than in the browser, but you can easily transfer your passwords and bookmarks from Chrome to Firefox. 
@@ -270,11 +306,14 @@
 			<li>Under “Ads settings”, select Ads personalization.</li>
 			<li>Turn off the switch next to “Ad personalization is turned on”.</li>
 		</ul>
+	</div>
+
+
+	<div class="container" id="gif_search">
+		<img src="images\turn_off_ad.gif" alt="Nature" class="responsive"  width="600" height="400">
+
+	</div>
 		
-		<img src="images\turn_off_ad.gif" alt="funny GIF"  width="660" height="615" >
-
-
-
 
 		<li></li>
 	</ul>
@@ -298,7 +337,13 @@
 	 After walking around the city, they checked what data was being sent. 
 	 You will be shocked to learn what data you are constantly sending to Google. 
 	 Please watch the video below to learn more.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0s8ZG6HuLrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	 <div class="iframe-container">
+		<iframe  src="https://www.youtube.com/embed/0s8ZG6HuLrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+		<!-- end video-->	
+	</div>
+		
+
 
 </div>
 <br>
